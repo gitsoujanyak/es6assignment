@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+class employee  {
+    constructor(name, empid, add, update, storenum){
+        this.name = name;
+        this.empid = empid;
+        this.add = add;
+        this.update = update;
+        this.storenum = storenum; 
+    }
+    get permissions() {
+        return this.actions();
+    }
+
+    actions() {
+        return this.add,this.update;
+    }    
+    
+    
+    present() {
+        return {this.name, this.empid, this.storenum};
+       
+    }
+
+}
+
+class manager extends employee  {
+    constructor(name, empid, permissions, storenum,emplist, changeperm) {
+        super(name);
+        super(empid);
+        super(this.permissions);
+        super(storenum);
+        this.list = emplist;
+        this.permchange = changeperm;
+    }
+
+    show()  {
+        return this.present();
+        return 'Can manage ' + this.list;
+        return 'Can change permission ' + this.permchange;
+    }
+
+}
+
+const emp1 = new manager("Kanthi", "001", "add", "123");
+document.write(emp1.show());
+
+</script>
+</body>
+</html>
