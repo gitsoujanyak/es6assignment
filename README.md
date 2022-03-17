@@ -1,4 +1,4 @@
-1. Create an Employee class.
+### Create an Employee class.
 ● An employee should have
 ○ name
 ○ Id number
@@ -16,7 +16,7 @@ class Employee {
 }
 console.log(Employee);
 
-2.2. Create a Manager class.
+### Create a Manager class.
 ● A manager is a type of employee.
 ● A manager should should have
 ○ name
@@ -43,7 +43,8 @@ Solution:class Manager extends Employee {
 }
 console.log(Manager);
 
-3. const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
+## Problem 3:
+const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 Destructure and assign the elements of countries array to fin, est, sw, den, nor
 
 Solution:
@@ -52,7 +53,8 @@ const countries = ["Finland", "Estonia", "Sweden", "Denmark", "Norway"];
 const [fin, est, sw, den, nor] = countries;
 console.log(fin, est, sw, den, nor);
 
-4.const rectangle = {
+## Problem 4:
+const rectangle = {
 width: 20,
 height: 10,
 area: 200,
@@ -69,7 +71,8 @@ function myRectangle({ width, height, area, perimeter }) {
   document.getElementById("demo").innerHTML = message;
 }
 
-5.const evens = [0, 2, 4, 6, 8, 10]
+## Problem 5:
+const evens = [0, 2, 4, 6, 8, 10]
 const odds = [1, 3, 5, 7, 9]
 Using the spread operator, the Array .map() method, and at least one arrow function to
 place the values from evens and odds into an array and display the values on a html
