@@ -1,11 +1,5 @@
-1. Create an Employee class.
-● An employee should have
-○ name
-○ Id number
-○ List of permissions that they can perform on the company website
-○ Store number for the store where they work
+//1. Class employees with properties name, id number, permissions they can perform, and store number where they work.
 
-Solution:
 class Employee {
   constructor(name, empid, emppermissions, storenum) {
     this.name = name;
@@ -16,18 +10,10 @@ class Employee {
 }
 console.log(Employee);
 
-2.2. Create a Manager class.
-● A manager is a type of employee.
-● A manager should should have
-○ name
-○ Id number
-○ List of permissions that they can perform on the company website
-○ Store number for the store where they work
-○ List of employees they manage
-○ The ability to change the permissions an employee that they manage has
-on the website.
+//2. Class Manager who extends from class Employee. Class Manager inherits all the properties of class Employee.
+//Class Manager has two additional properties: list of employees and the ability to change the employee permissions.
 
-Solution:class Manager extends Employee {
+class Manager extends Employee {
   constructor(
     name,
     empid,
@@ -43,24 +29,21 @@ Solution:class Manager extends Employee {
 }
 console.log(Manager);
 
-3. const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
-Destructure and assign the elements of countries array to fin, est, sw, den, nor
-
-Solution:
+//3.Destructure and assign the elements of countires array to fin, est, sw, den, nor
 const countries = ["Finland", "Estonia", "Sweden", "Denmark", "Norway"];
 
 const [fin, est, sw, den, nor] = countries;
 console.log(fin, est, sw, den, nor);
 
-4.const rectangle = {
-width: 20,
-height: 10,
-area: 200,
-perimeter: 60
-}
-Destructure the rectangle object by its properties.
 
-Solution:
+//4.Destructure the rectangle object by its properties.
+const rectangle = {
+  width: 20,
+  height: 10,
+  area: 200,
+  perimeter: 60,
+};
+
 myRectangle(rectangle);
 
 function myRectangle({ width, height, area, perimeter }) {
@@ -69,13 +52,8 @@ function myRectangle({ width, height, area, perimeter }) {
   document.getElementById("demo").innerHTML = message;
 }
 
-5.const evens = [0, 2, 4, 6, 8, 10]
-const odds = [1, 3, 5, 7, 9]
-Using the spread operator, the Array .map() method, and at least one arrow function to
-place the values from evens and odds into an array and display the values on a html
-screen in numerical order.
-
-Solution:
+// 5.Using the spread operator, the Array .map() method, and at least one arrow function to place the values from evens and odds into an array
+//and display the values on a html screen in numerical order.
 const evens = [0, 2, 4, 6, 8, 10];
 const odds = [1, 3, 5, 7, 9];
 const combined = [...evens, ...odds];
@@ -97,4 +75,3 @@ function showarray(val) {
 
 const myList = combined.map((item) => showarray(item));
 document.write("<br>myList: ", myList);
-
