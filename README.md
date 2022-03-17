@@ -7,6 +7,9 @@ An employee should have
 - Store number for the store where they work
 
 ### Solution
+
+```javascript
+javascript
 class Employee {
   constructor(name, empid, emppermissions, storenum) {
     this.name = name;
