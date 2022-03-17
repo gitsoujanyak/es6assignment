@@ -1,11 +1,12 @@
-### Create an Employee class.
-● An employee should have
-○ name
-○ Id number
-○ List of permissions that they can perform on the company website
-○ Store number for the store where they work
+## Problem 1
+### Create an Employee class
+An employee should have
+- name
+- Id number
+- List of permissions that they can perform on the company website
+- Store number for the store where they work
 
-Solution:
+### Solution
 class Employee {
   constructor(name, empid, emppermissions, storenum) {
     this.name = name;
@@ -16,18 +17,18 @@ class Employee {
 }
 console.log(Employee);
 
-### Create a Manager class.
-● A manager is a type of employee.
-● A manager should should have
-○ name
-○ Id number
-○ List of permissions that they can perform on the company website
-○ Store number for the store where they work
-○ List of employees they manage
-○ The ability to change the permissions an employee that they manage has
-on the website.
+## Problem 2
+### Create a Manager class
+A manager is a type of employee. A manager should should have
+- name
+- Id number
+- List of permissions that they can perform on the company website
+- Store number for the store where they work
+- List of employees they manage
+- The ability to change the permissions an employee that they manage has on the website.
 
-Solution:class Manager extends Employee {
+### Solution
+class Manager extends Employee {
   constructor(
     name,
     empid,
@@ -43,17 +44,17 @@ Solution:class Manager extends Employee {
 }
 console.log(Manager);
 
-## Problem 3:
+## Problem 3
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 Destructure and assign the elements of countries array to fin, est, sw, den, nor
 
-Solution:
+### Solution
 const countries = ["Finland", "Estonia", "Sweden", "Denmark", "Norway"];
 
 const [fin, est, sw, den, nor] = countries;
 console.log(fin, est, sw, den, nor);
 
-## Problem 4:
+## Problem 4
 const rectangle = {
 width: 20,
 height: 10,
@@ -62,7 +63,7 @@ perimeter: 60
 }
 Destructure the rectangle object by its properties.
 
-Solution:
+### Solution
 myRectangle(rectangle);
 
 function myRectangle({ width, height, area, perimeter }) {
@@ -71,14 +72,14 @@ function myRectangle({ width, height, area, perimeter }) {
   document.getElementById("demo").innerHTML = message;
 }
 
-## Problem 5:
+## Problem 5
 const evens = [0, 2, 4, 6, 8, 10]
 const odds = [1, 3, 5, 7, 9]
 Using the spread operator, the Array .map() method, and at least one arrow function to
 place the values from evens and odds into an array and display the values on a html
 screen in numerical order.
 
-Solution:
+### Solution
 const evens = [0, 2, 4, 6, 8, 10];
 const odds = [1, 3, 5, 7, 9];
 const combined = [...evens, ...odds];
