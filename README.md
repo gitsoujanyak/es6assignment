@@ -30,6 +30,7 @@ A manager is a type of employee. A manager should should have
 - The ability to change the permissions an employee that they manage has on the website.
 
 ### Solution
+```javascript
 class Manager extends Employee {
   constructor(
     name,
@@ -45,17 +46,18 @@ class Manager extends Employee {
   }
 }
 console.log(Manager);
-
+```
 ## Problem 3
 const countries = ['Finland', 'Estonia', 'Sweden', 'Denmark', 'Norway']
 Destructure and assign the elements of countries array to fin, est, sw, den, nor
 
 ### Solution
+```javascript
 const countries = ["Finland", "Estonia", "Sweden", "Denmark", "Norway"];
 
 const [fin, est, sw, den, nor] = countries;
 console.log(fin, est, sw, den, nor);
-
+```
 ## Problem 4
 const rectangle = {
 width: 20,
@@ -66,6 +68,7 @@ perimeter: 60
 Destructure the rectangle object by its properties.
 
 ### Solution
+```javascript
 myRectangle(rectangle);
 
 function myRectangle({ width, height, area, perimeter }) {
@@ -73,8 +76,9 @@ function myRectangle({ width, height, area, perimeter }) {
 
   document.getElementById("demo").innerHTML = message;
 }
-
+```
 ## Problem 5
+```javascript
 const evens = [0, 2, 4, 6, 8, 10]
 const odds = [1, 3, 5, 7, 9]
 Using the spread operator, the Array .map() method, and at least one arrow function to
@@ -103,4 +107,4 @@ function showarray(val) {
 
 const myList = combined.map((item) => showarray(item));
 document.write("<br>myList: ", myList);
-
+```
