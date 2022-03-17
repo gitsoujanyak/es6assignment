@@ -9,7 +9,6 @@ An employee should have
 ### Solution
 
 ```javascript
-javascript
 class Employee {
   constructor(name, empid, emppermissions, storenum) {
     this.name = name;
@@ -19,7 +18,7 @@ class Employee {
   }
 }
 console.log(Employee);
-
+```
 ## Problem 2
 ### Create a Manager class
 A manager is a type of employee. A manager should should have
