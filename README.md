@@ -78,7 +78,7 @@ function myRectangle({ width, height, area, perimeter }) {
 }
 ```
 ## Problem 5
-```javascript
+
 const evens = [0, 2, 4, 6, 8, 10]
 const odds = [1, 3, 5, 7, 9]
 Using the spread operator, the Array .map() method, and at least one arrow function to
@@ -86,6 +86,7 @@ place the values from evens and odds into an array and display the values on a h
 screen in numerical order.
 
 ### Solution
+```javascript
 const evens = [0, 2, 4, 6, 8, 10];
 const odds = [1, 3, 5, 7, 9];
 const combined = [...evens, ...odds];
